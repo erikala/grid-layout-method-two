@@ -1,0 +1,40 @@
+.grid {
+  display: grid;
+  grid-template-columns: 250px auto 250px;
+  grid-template-rows: 150px 450px 100px;
+  grid-gap: 1em;
+  grid-template-areas: "header header header"
+                       "sidebar-1 article sidebar-2"
+                       "footer footer footer"
+}
+
+header {
+  grid-area: header;
+  background-color: #46b1c9;
+}
+
+.sidebar-left {
+  grid-area: sidebar-1;
+  background-color: #84c0c6;
+}
+
+article {
+  grid-area: article;
+  background-color: #f2e2d2;
+}
+
+.sidebar-right {
+  grid-area: sidebar-2;
+  background-color: #bcc1ba;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #9fb7b9;
+}
+
+p {
+  text-align: center;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  padding: 30px;
+}
